@@ -1,3 +1,4 @@
+// JAVASCRIPT
 // ===== LOGIN FORM VALIDATION =====
 const loginForm = document.getElementById("loginForm");
 
