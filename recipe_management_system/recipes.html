@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipes - Recipe Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="recipes.html">Recipes</a>
+    <a href="ingredients.html">Ingredients</a>
+    <a href="recipe-form.html">Add Recipe</a>
+    <a href="login.html">Logout</a>
+  </header>
+
+  <div class="container">
+    <h1>All Recipes</h1>
+
+    <form action="recipes.html" method="get">
+      <label for="search">Search by name</label>
+      <input type="text" id="search" name="search" placeholder="Recipe name">
+
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty" name="difficulty">
+        <option value="">All</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="recipe-grid">
+
+      <a href="recipe-view.html" style="text-decoration:none; color:inherit;">
+        <div class="recipe-card">
+          <img src="images/pancake.jpg" alt="Recipe photo">
+          <h3>Pancakes</h3>
+          <p>Category: Breakfast</p>
+        </div>
+      </a>
+
+      <a href="recipe-view.html" style="text-decoration:none; color:inherit;">
+        <div class="recipe-card">
+          <img src="images/maincourse.jpg" alt="Recipe photo">
+          <h3>Pasta</h3>
+          <p>Category: Main Course</p>
+        </div>
+      </a>
+
+      <a href="recipe-view.html" style="text-decoration:none; color:inherit;">
+        <div class="recipe-card">
+          <img src="images/brownie.jpg" alt="Recipe photo">
+          <h3>Brownies</h3>
+          <p>Category: Dessert</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
